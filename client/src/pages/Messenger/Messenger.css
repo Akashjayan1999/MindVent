@@ -1,0 +1,128 @@
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+  }
+  
+  .chatMenu {
+    flex: 3.5;
+  }
+  
+  .chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .chatBox {
+    flex: 5.5;
+  }
+  
+  .chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+  
+  .chatBoxBottom {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chatMessageInput {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    align-items: center;
+    gap: 1rem;
+    width: 37rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    align-self: end;
+  }
+  
+  .chatSubmitButton {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+  }
+  
+  .chatOnline {
+    flex: 3;
+  }
+  
+  .chatMenuWrapper,
+  .chatBoxWrapper,
+  .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .noConversationText {
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    color: rgb(224, 220, 220);
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chatMenu {
+      flex: 1;
+    }
+  
+    .chatMenuInput {
+      display: none;
+    }
+  
+    .chatBox{
+      flex: 10;
+    }
+  
+    .chatOnline{
+      flex: 1px;
+    }
+  }
+
+  .user-box {
+    border: 1px solid #02051b;
+    background-color: rgb(9, 10, 10);
+    padding: 1px;
+    margin-bottom: 1.2px;
+    border-radius: .7rem;
+    line-height: .2;
+    padding-left: 1rem;
+    /* set the desired height */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .search-result:hover {
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+  .user-box:hover{
+    background-color: rgb(58, 18, 4)
+  }
+  .name:hover {
+    text-decoration:solid;
+  }
+
+ 
